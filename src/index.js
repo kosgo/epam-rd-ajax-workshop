@@ -3,12 +3,15 @@ import fs from 'fs';
 import users from './config/users';
 import posts from './config/posts';
 import jwt from 'jsonwebtoken';
+import cors from 'cors';
 import { verifyToken } from './verifyToken';
 import { TOKEN_SECRET } from "./constants";
 
 const app = express();
 const PORT = 3000;
 
+app.use(cors());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.get('/', (req, res) => {
     res.send(`
@@ -26,12 +29,20 @@ app.post('/api/login', (req, res) => {
 
     if (!user) {
         res.status(400).send({ message: 'Wrong login / password' });
+        console.error('===> Wrong login / password');
+
         return;
     }
 
     const jwtToken = jwt.sign({ id: user.id }, TOKEN_SECRET);
-    res.header('Authorization', `Bearer ${jwtToken}`);
-    res.send();
+    res.header('Access-Control-Expose-Headers', 'access-token');
+    res.header('access-token', `Bearer ${jwtToken}`);
+    res.send({
+        login: user.login,
+        firstName: user.firstName,
+        lastName: user.lastName,
+        id: user.id
+    });
 });
 
 app.post('/api/register', (req, res) => {
@@ -44,6 +55,8 @@ app.post('/api/register', (req, res) => {
         && typeof req.body.lastName === "string";
     if (!isValidBody) {
         res.status(400).send({ message: 'Invalid data' });
+        console.error('===> Invalid data');
+
         return;
     }
 
