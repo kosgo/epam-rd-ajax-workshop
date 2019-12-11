@@ -77,6 +77,13 @@ app.post('/api/register', (req, res) => {
 
 app.use(verifyToken);
 app.get('/api/posts', (req, res) => {
+    if (req.query.q) {
+        const matchedPosts = posts.filter(post => post.title.toLowerCase().includes(req.query.q.toLowerCase()));
+        res.send(matchedPosts);
+
+        return;
+    }
+
     res.send(posts);
 });
 
@@ -95,13 +102,13 @@ app.post('/api/posts', (req, res) => {
     }
 
     posts.push({
-        "id": posts.length,
-        "title": req.body.title,
-        "author": req.body.author,
-        "image": req.body.image,
-        "keywords": req.body.keywords,
-        "articleBody": req.body.articleBody,
-        "shortDescription": req.body.shortDescription
+        id: posts.length,
+        title: req.body.title,
+        author: req.body.author,
+        image: req.body.image,
+        keywords: req.body.keywords,
+        articleBody: req.body.articleBody,
+        shortDescription: req.body.shortDescription
     });
     fs.writeFile('./src/config/posts.json', JSON.stringify(posts), error => {
        if (error) {
