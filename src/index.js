@@ -35,7 +35,13 @@ app.post('/api/login', (req, res) => {
 });
 
 app.post('/api/register', (req, res) => {
-    const isValidBody = typeof req.body.login === 'string' && typeof req.body.password === "string" && req.body.login.length >= 3 && req.body.password.length >= 3;
+    const isValidBody =
+        typeof req.body.login === 'string'
+        && typeof req.body.password === "string"
+        && req.body.login.length >= 3
+        && req.body.password.length >= 3
+        && typeof req.body.firstName === "string"
+        && typeof req.body.lastName === "string";
     if (!isValidBody) {
         res.status(400).send({ message: 'Invalid data' });
         return;
@@ -50,7 +56,9 @@ app.post('/api/register', (req, res) => {
     users.push({
         id: users.length,
         login: req.body.login,
-        password: req.body.password
+        password: req.body.password,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName
     });
 
     fs.writeFile('./src/config/users.json', JSON.stringify(users), error => {
@@ -60,8 +68,9 @@ app.post('/api/register', (req, res) => {
         }
 
         res.send({
-            id: users.length,
             login: req.body.login,
+            firstName: req.body.firstName,
+            lastName: req.body.lastName
         });
     });
 });
