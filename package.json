@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node src/index.js",
-    "dev": "nodemon --exec babel-node ./src/index.js"
+    "start": "nodemon --exec babel-node ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +18,7 @@
   },
   "homepage": "https://github.com/kosgo/epam-rd-ajax-workshop#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1"
   },
