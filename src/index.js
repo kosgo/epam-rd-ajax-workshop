@@ -11,7 +11,14 @@ const PORT = 3000;
 
 app.use(express.json());
 app.get('/', (req, res) => {
-    res.send(users);
+    res.send(`
+        <ul>
+            <li>POST /api/login</li>
+            <li>POST /api/register</li>
+            <li>GET  /api/posts</li>
+            <li>POST /api/posts</li>
+        </ul>
+    `);
 });
 
 app.post('/api/login', (req, res) => {
