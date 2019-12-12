@@ -1,1 +1,59 @@
-[{"id":0,"title":"Extra! Extra! Read alla bout it","author":"Patrick Coombe","image":"https://images.pexels.com/photos/3350141/pexels-photo-3350141.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500","keywords":["text","example"],"articleBody":"You can paste your entire post in here, and yes it can get really really long.","shortDescription":"We love to do stuff to help people and stuff"},{"id":1,"title":"My first article","author":"kos Go","image":"https://images.pexels.com/photos/3326738/pexels-photo-3326738.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500","keywords":[],"articleBody":"Lorem ipsum dolor sit amet","shortDescription":"Lorem ipsum"}]
+[
+  {
+    "id": 0,
+    "title": "Extra! Extra! Read alla bout it",
+    "author": "Patrick Coombe",
+    "image": "https://images.pexels.com/photos/3350141/pexels-photo-3350141.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "keywords": [
+      "text",
+      "example"
+    ],
+    "articleBody": "You can paste your entire post in here, and yes it can get really really long.",
+    "shortDescription": "We love to do stuff to help people and stuff"
+  },
+  {
+    "id": 1,
+    "title": "My first article",
+    "author": "Kos Go",
+    "image": "https://images.pexels.com/photos/3326738/pexels-photo-3326738.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "keywords": [],
+    "articleBody": "Lorem ipsum dolor sit amet",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 2,
+    "title": "Who is John Galt",
+    "author": "John Galt",
+    "image": "https://images.pexels.com/photos/3290071/pexels-photo-3290071.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "keywords": ["Atlas", "Shrugged", "Book"],
+    "articleBody": "Lorem ipsum dolor sit amet",
+    "shortDescription": "The book depicts a dystopian United States in which private businesses suffer under increasingly burdensome laws and regulations. Railroad executive Dagny Taggart and her lover, steel magnate Hank Rearden, struggle against \"looters\" who want to exploit their productivity"
+  },
+  {
+    "id": 3,
+    "title": "Lorem Ipsum",
+    "author": "John Galt",
+    "image": "https://images.pexels.com/photos/3277926/pexels-photo-3277926.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "keywords": ["paint", "Wood", "Chair"],
+    "articleBody": "Lorem ipsum dolor sit amet",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 4,
+    "title": "Dolor Sit Amet",
+    "author": "Consectetur Adipiscing ",
+    "image": "https://images.pexels.com/photos/3326195/pexels-photo-3326195.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "keywords": ["Lorem", "Galt", "Ipsum"],
+    "articleBody": "Lorem ipsum dolor sit amet",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 5,
+    "title": "Dolor Sit Amet",
+    "author": "Consectetur Adipiscing ",
+    "image": "https://images.pexels.com/photos/3137078/pexels-photo-3137078.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "keywords": ["Wood", "Galt", "Ipsum"],
+    "articleBody": "Lorem ipsum dolor sit amet",
+    "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }
+]
